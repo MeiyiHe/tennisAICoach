@@ -1,0 +1,23 @@
+Python / Flask specific
+Ignore the virtual environment folder
+venv/
+Ignore Python cache files
+pycache/ *.pyc
+Ignore video files uploaded by users
+uploads/
+Ignore the downloaded MediaPipe model file
+*.task
+Node.js / React specific (in the frontend folder)
+Ignore the massive node_modules folder
+tennis-ai-frontend/node_modules
+Ignore the production build folder
+tennis-ai-frontend/build
+Ignore log files
+tennis-ai-frontend/npm-debug.log* tennis-ai-frontend/yarn-debug.log* tennis-ai-frontend/yarn-error.log*
+Ignore local environment variables
+tennis-ai-frontend/.env.local tennis-ai-frontend/.env.development.local tennis-ai-frontend/.env.test.local tennis-ai-frontend/.env.production.local
+Common files to ignore
+OS-specific files (macOS)
+.DS_Store
+IDE configuration folders
+.idea/ .vscode/
