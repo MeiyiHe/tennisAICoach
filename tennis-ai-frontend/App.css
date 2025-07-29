@@ -1,0 +1,175 @@
+body {
+  background-color: #f0f2f5;
+  color: #1c1e21;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #ffffff;
+  padding: 20px;
+  border-bottom: 1px solid #dddfe2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.App-header h1 {
+  margin: 0;
+  color: #007bff; /* A more vibrant blue */
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.controls {
+  margin: 20px 0;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #007bff, #0056b3);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+button:disabled {
+  background-image: none;
+  background-color: #a9a9a9;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.error-message {
+  color: #dc3545;
+  margin-top: 15px;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.loader {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 40px;
+}
+
+.video-preview {
+  margin-top: 20px;
+}
+
+.video-preview video {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.results-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.analysis-player {
+  position: relative;
+  width: 80%;
+  max-width: 720px; /* Control max size */
+  margin: 20px auto;
+}
+
+.analysis-player video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.analysis-player canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Allows clicks to go through to the video */
+}
+
+.feedback-section {
+  width: 80%;
+  max-width: 720px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.feedback-section h3 {
+  margin-top: 0;
+  color: #007bff;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.feedback-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.feedback-section li {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  background-color: #e9ecef;
+  color: #495057;
+  display: flex;
+  align-items: center;
+}
+
+.feedback-section li::before {
+  content: '💡';
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+.reset-button {
+  margin-top: 20px;
+  background-image: linear-gradient(to right, #6c757d, #5a6268);
+}
+
+.reset-button:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
